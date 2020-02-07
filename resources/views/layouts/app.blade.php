@@ -18,11 +18,12 @@
             <div class="container mx-auto px-6 md:px-0">
                 <div class="flex items-center justify-center">
                     <div class="mr-6">
-                        <a href="{{ url('/') }}" class="text-lg font-semibold text-gray-100 no-underline">
+                        <a href="{{ url('/') }}" class="text-2xl font-bold text-gray-100 no-underline">
                             {{ config('app.name', 'Laravel') }}
                         </a>
                     </div>
                     <div class="flex-1 text-right">
+                    {{--
                         @guest
                             <a class="no-underline hover:underline text-gray-300 text-sm p-3" href="{{ route('login') }}">{{ __('Login') }}</a>
                             @if (Route::has('register'))
@@ -39,12 +40,17 @@
                                 {{ csrf_field() }}
                             </form>
                         @endguest
+                    --}}
                     </div>
                 </div>
             </div>
         </nav>
 
         @yield('content')
+
+        <div class="container mt-12 mx-auto px-6 md:px-0 text-gray-600">
+            From the lovely folks at <a href="https://tighten.co/" class="underline hover:text-gray-800">Tighten</a>. Open source on <a href="https://github.com/tightenco/consoles" class="underline hover:text-gray-800">GitHub as tightenco/consoles</a>
+        </div>
     </div>
 
     <!-- Scripts -->
