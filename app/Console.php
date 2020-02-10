@@ -9,10 +9,6 @@ class Console extends Model
 {
     use Sushi;
 
-    protected $guarded = [];
-
-    public $timestamps = false;
-
     protected $rows = [
         [
             'name' => 'AWS Management Console',
