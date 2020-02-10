@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Consoles.dev') }}</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
                 <div class="flex items-center justify-center">
                     <h1 class="mr-6">
                         <a href="{{ url('/') }}" class="font-bold font-display lowercase no-underline text-5xl text-gray-800">
-                            {{ config('app.name', 'Laravel') }}
+                            {{ config('app.name', 'Consoles.dev') }}
                         </a>
                     </h1>
                 </div>
