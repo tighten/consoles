@@ -2,10 +2,12 @@
 
 use App\Console;
 
-Route::get('/', function () {
-    return view('consoles.index', [
-        'providers' => \App\Provider::all(),
-    ]);
+Route::middleware('cache.headers:public;max_age=600;etag')->group(function () {
+    Route::get('/', function () {
+        return view('consoles.index', [
+            'providers' => \App\Provider::all(),
+        ]);
+    });
 });
 
 Route::get('{console}', function (Console $console) {
