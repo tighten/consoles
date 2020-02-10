@@ -10,4 +10,4 @@ Route::get('/', function () {
 
 Route::any('{console}', function (Console $console) {
     return redirect($console->url);
-})->where('route', '.*');
+})->where('route', '*');
