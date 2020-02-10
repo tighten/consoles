@@ -10,7 +10,7 @@ class ConsoleRedirectTest extends TestCase
     /** @test */
     function it_throws_404_it_console_not_found()
     {
-        $response = $this->get('/not-found-provider');
+        $response = $this->get('/not-found-console');
 
         $response->assertStatus(404);
     }
