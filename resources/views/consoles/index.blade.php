@@ -10,7 +10,7 @@
                 <div class="w-full p-2 md:p-6 text-xl">
                     @foreach ($providers as $provider)
                         <div class="mb-4">
-                            <div class="font-semibold mb-2 text-gray-600 text-lg uppercase">{{ $provider->name }}</div>
+                            <div class="font-semibold mb-2 text-gray-700 text-lg uppercase">{{ $provider->name }}</div>
                             @foreach ($provider->consoles as $console)
                                 <a href="{{ $console->url }}" class="bg-blue-700 hover:bg-blue-800 inline-block border font-semibold mr-2 py-3 px-6 rounded-md text-blue-100 hover:text-white mb-4">{{ $console->name }}</a><br>
                             @endforeach

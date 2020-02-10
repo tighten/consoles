@@ -18,18 +18,18 @@
         <nav class="mb-2 mt-8 py-6">
             <div class="container mx-auto px-6 md:px-0">
                 <div class="flex items-center justify-center">
-                    <div class="mr-6">
+                    <h1 class="mr-6">
                         <a href="{{ url('/') }}" class="font-bold font-display lowercase no-underline text-5xl text-gray-800">
                             {{ config('app.name', 'Laravel') }}
                         </a>
-                    </div>
+                    </h1>
                 </div>
             </div>
         </nav>
 
         @yield('content')
 
-        <div class="container md:mt-6 mx-auto p-4 md:px-0 text-center text-gray-600">
+        <div class="container md:mt-6 mx-auto p-4 md:px-0 text-center text-gray-700">
             From the lovely folks at <a href="https://tighten.co/" class="underline hover:text-gray-800">Tighten</a>. Open source on <a href="https://github.com/tightenco/consoles" class="underline hover:text-gray-800">GitHub as tightenco/consoles</a>
         </div>
     </div>
