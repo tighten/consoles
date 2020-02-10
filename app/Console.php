@@ -17,12 +17,6 @@ class Console extends Model
             'route' => 'amazon',
         ],
         [
-            'name' => 'AWS IAM Console',
-            'url' => 'https://console.aws.amazon.com/iam',
-            'provider' => 'Amazon',
-            'route' => 'amazon/iam',
-        ],
-        [
             'name' => 'Google API Console',
             'url' => 'https://console.developers.google.com/',
             'provider' => 'Google',
