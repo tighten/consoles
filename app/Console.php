@@ -11,19 +11,19 @@ class Console extends Model
 
     protected $rows = [
         [
-            'name' => 'AWS',
+            'name' => 'AWS Management Console',
             'url' => 'https://console.aws.amazon.com/',
         ],
         [
-            'name' => 'Google',
+            'name' => 'Google API Console',
             'url' => 'https://console.developers.google.com/',
         ],
         [
-            'name' => 'Twitter',
+            'name' => 'Twitter Apps',
             'url' => 'https://developer.twitter.com/en/apps',
         ],
         [
-            'name' => 'GitHub',
+            'name' => 'GitHub OAuth Apps',
             'url' => 'https://github.com/settings/developers',
         ]
     ];
