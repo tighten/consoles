@@ -26,6 +26,11 @@ class Console extends Model
             'provider' => 'Google',
         ],
         [
+            'name' => 'Google Analytics Console',
+            'url' => 'https://analytics.google.com/analytics/web/',
+            'provider' => 'Google',
+        ],
+        [
             'name' => 'Twitter Apps',
             'url' => 'https://developer.twitter.com/en/apps',
             'provider' => 'Twitter',
