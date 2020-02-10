@@ -14,13 +14,13 @@ class Console extends Model
             'name' => 'AWS Management Console',
             'url' => 'https://console.aws.amazon.com/',
             'provider' => 'Amazon',
-            'route' => 'amazon-aws',
+            'route' => 'amazon',
         ],
         [
             'name' => 'AWS IAM Console',
             'url' => 'https://console.aws.amazon.com/iam',
             'provider' => 'Amazon',
-            'route' => 'amazon-iam',
+            'route' => 'amazon/iam',
         ],
         [
             'name' => 'Google API Console',
