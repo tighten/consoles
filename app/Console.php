@@ -2,8 +2,8 @@
 
 namespace App;
 
-use Sushi\Sushi;
 use Illuminate\Database\Eloquent\Model;
+use Sushi\Sushi;
 
 class Console extends Model
 {
