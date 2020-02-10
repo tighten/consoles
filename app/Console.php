@@ -31,6 +31,11 @@ class Console extends Model
             'provider' => 'Google',
         ],
         [
+            'name' => 'Google Play Console',
+            'url' => 'https://play.google.com/apps/publish',
+            'provider' => 'Google',
+        ],
+        [
             'name' => 'Twitter Apps',
             'url' => 'https://developer.twitter.com/en/apps',
             'provider' => 'Twitter',
