@@ -1,15 +1,13 @@
 <?php
 
+use App\Console;
+
 Route::get('/', function () {
     return view('consoles.index', [
         'providers' => \App\Provider::all(),
     ]);
 });
 
-Route::any('{route}', function ($route) {
-    if ($console = \App\Console::where('route', $route)->first()) {
-        return redirect($console->url);
-    }
-
-    abort(404);
+Route::any('{console}', function (Console $console) {
+    return redirect($console->url);
 })->where('route', '.*');

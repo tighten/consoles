@@ -42,6 +42,16 @@ class Console extends Model
         ],
     ];
 
+    /**
+     * Get the route key for the model.
+     *
+     * @return string
+     */
+    public function getRouteKeyName()
+    {
+        return 'route';
+    }
+
     public function provider()
     {
         return $this->belongsTo(Provider::class, 'provider', 'name');
