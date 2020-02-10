@@ -2,6 +2,6 @@
 
 Route::get('/', function () {
     return view('consoles.index', [
-        'consoles' => \App\Console::all(),
+        'providers' => \App\Provider::all(),
     ]);
 });
