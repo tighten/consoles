@@ -17,6 +17,12 @@ class Console extends Model
             'route' => 'amazon',
         ],
         [
+            'name' => 'AWS Console w/Account ID/alias',
+            'url' => 'https://signin.aws.amazon.com/oauth?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fhomepage&response_type=code&iam_user=true&account=',
+            'provider' => 'Amazon',
+            'route' => 'amazon/with-account',
+        ],
+        [
             'name' => 'Google API Console',
             'url' => 'https://console.developers.google.com/',
             'provider' => 'Google',
@@ -45,6 +51,12 @@ class Console extends Model
             'url' => 'https://github.com/settings/developers',
             'provider' => 'GitHub',
             'route' => 'github',
+        ],
+        [
+            'name' => 'Azure Portal',
+            'url' => 'https://portal.azure.com/',
+            'provider' => 'Microsoft',
+            'route' => 'azure',
         ],
     ];
 

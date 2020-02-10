@@ -17,10 +17,13 @@ class Provider extends Model
             'name' => 'Google',
         ],
         [
-            'name' => 'Twitter',
+            'name' => 'Microsoft',
         ],
         [
             'name' => 'GitHub',
+        ],
+        [
+            'name' => 'Twitter',
         ],
     ];
 
