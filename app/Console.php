@@ -82,6 +82,12 @@ class Console extends Model
             'provider' => 'Linode',
             'route' => 'linode',
         ],
+        [
+            'name' => 'Digital Ocean Cloud',
+            'url' => 'https://cloud.digitalocean.com/',
+            'provider' => 'Digital Ocean',
+            'route' => 'digital-ocean',
+        ],
     ];
 
     /**

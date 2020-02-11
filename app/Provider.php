@@ -34,6 +34,9 @@ class Provider extends Model
         [
             'name' => 'Linode',
         ],
+        [
+            'name' => 'Digital Ocean',
+        ]
     ];
 
     public function consoles()
