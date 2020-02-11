@@ -70,6 +70,12 @@ class Console extends Model
             'provider' => 'Microsoft',
             'route' => 'azure',
         ],
+        [
+            'name' => 'My Vultr',
+            'url' => 'https://my.vultr.com/',
+            'provider' => 'Vultr',
+            'route' => 'vultr',
+        ],
     ];
 
     /**
