@@ -15,7 +15,7 @@ class ForwardSubdomainRequests
      */
     public function handle($request, Closure $next)
     {
-        $domain = str_replace(['https://', 'http://'], [], config('app.url'));
+        $domain = trim(str_replace(['https://', 'http://'], [], config('app.url')), "/");
         $slug = str_replace($domain, '', $request->getHttpHost());
 
         if (! empty($slug)) {
