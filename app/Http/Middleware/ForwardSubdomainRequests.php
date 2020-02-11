@@ -21,9 +21,12 @@ class ForwardSubdomainRequests
         if (! empty($slug)) {
             // Drop the trailing .
             $slug = substr($slug, 0, -1);
+
             // Replace remaining . with / (to allow for aws.account.consoles.dev
-            // forwarding to consoles.dev/aws/iam)
-            return redirect(config('app.url') . '/' . str_replace('.', '/', $slug));
+            // forwarding to consoles.dev/aws/account)
+            $slug = str_replace('.', '/', $slug);
+
+            return redirect(config('app.url') . '/' . $slug);
         }
 
         return $next($request);
