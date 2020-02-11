@@ -31,6 +31,9 @@ class Provider extends Model
         [
             'name' => 'Vultr',
         ],
+        [
+            'name' => 'Linode',
+        ],
     ];
 
     public function consoles()

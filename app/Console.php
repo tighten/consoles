@@ -76,6 +76,12 @@ class Console extends Model
             'provider' => 'Vultr',
             'route' => 'vultr',
         ],
+        [
+            'name' => 'Linode Cloud',
+            'url' => 'https://cloud.linode.com/',
+            'provider' => 'Linode',
+            'route' => 'linode',
+        ],
     ];
 
     /**
