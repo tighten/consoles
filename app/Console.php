@@ -41,6 +41,12 @@ class Console extends Model
             'route' => 'google/play',
         ],
         [
+            'name' => 'Hetzner Cloud Console',
+            'url' => 'https://console.hetzner.cloud',
+            'provider' => 'Hetzner',
+            'route' => 'hcloud',
+        ],
+        [
             'name' => 'Twitter Apps',
             'url' => 'https://developer.twitter.com/en/apps',
             'provider' => 'Twitter',
