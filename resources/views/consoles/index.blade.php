@@ -8,7 +8,6 @@
             @foreach ($provider->consoles as $console)
                 <a href="{{ $console->url }}" class="m-2" id="{{ $console->shortcut }}">
                     <div class="bg-white p-6 rounded-lg shadow-lg">
-                        <span class="inline-block bg-teal-200 text-teal-800 text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide shortcut">{{ $console->shortcut }}</span>
                         <h4 class="mt-1 font-semibold text-lg leading-tight truncate">{{ $console->name }}</h4>
                     </div>
                 </a>

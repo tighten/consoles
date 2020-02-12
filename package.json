@@ -22,8 +22,5 @@
         "tailwindcss": "^1.0",
         "vue": "^2.5.17",
         "vue-template-compiler": "^2.6.10"
-    },
-    "dependencies": {
-        "mousetrap": "^1.6.5"
     }
 }

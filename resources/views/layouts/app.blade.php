@@ -24,7 +24,6 @@
                         </a>
                     </h1>
                 </div>
-                <span class="inline-block bg-teal-200 text-teal-800 text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide">These are shortcuts</span>
             </div>
         </nav>
 
@@ -37,6 +36,8 @@
 
     
     <!-- Scripts -->
-    <script src="{{ mix('js/mousetrap.js') }}"></script>
+    {{--
+        <script src="{{ mix('js/app.js') }}"></script> 
+    --}}
 </body>
 </html>
