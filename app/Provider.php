@@ -23,6 +23,9 @@ class Provider extends Model
             'name' => 'GitHub',
         ],
         [
+            'name' => 'Hetzner',
+        ],
+        [
             'name' => 'Twitter',
         ],
     ];

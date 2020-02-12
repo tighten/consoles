@@ -14,14 +14,14 @@ class Console extends Model
             'name' => 'AWS Management Console',
             'url' => 'https://console.aws.amazon.com/',
             'provider' => 'Amazon',
-            'route' => 'amazon',
+            'route' => 'aws',
             'shortcut' => 'a w s 1'
         ],
         [
             'name' => 'AWS Console w/IAM Account',
             'url' => 'https://signin.aws.amazon.com/oauth?redirect_uri=https%3A%2F%2Fconsole.aws.amazon.com%2Fconsole%2Fhome%3Fstate%3DhashArgs%2523%26isauthcode%3Dtrue&client_id=arn%3Aaws%3Aiam%3A%3A015428540659%3Auser%2Fhomepage&response_type=code&iam_user=true&account=',
             'provider' => 'Amazon',
-            'route' => 'amazon/with-account',
+            'route' => 'aws/account',
             'shortcut' => 'a w s 2'
         ],
         [
@@ -45,6 +45,20 @@ class Console extends Model
             'route' => 'google/play',
             'shortcut' => 'g p l'
         ],
+        [
+            'name' => 'Firebase Console',
+            'url' => 'https://console.firebase.google.com',
+            'provider' => 'Google',
+            'route' => 'google/firebase',
+            'shortcut' => 'f i r e'
+        ],
+        [
+            'name' => 'Hetzner Cloud Console',
+            'url' => 'https://console.hetzner.cloud',
+            'provider' => 'Hetzner',
+            'route' => 'hcloud',
+            'shortcut' => 'h c l'
+         ],
         [
             'name' => 'Twitter Apps',
             'url' => 'https://developer.twitter.com/en/apps',
