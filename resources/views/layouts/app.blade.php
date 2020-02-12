@@ -16,7 +16,7 @@
 <body class="bg-gray-100 h-screen antialiased leading-none">
     <div id="app">
         <nav class="mb-2 mt-8 py-6">
-            <div class="container mx-auto px-6 md:px-0">
+            <div class="container mx-auto px-6 md:px-0 text-center">
                 <div class="flex items-center justify-center">
                     <h1 class="mr-6">
                         <a href="{{ url('/') }}" class="font-bold font-display lowercase no-underline text-5xl text-gray-800">
@@ -24,6 +24,7 @@
                         </a>
                     </h1>
                 </div>
+                <span class="inline-block bg-teal-200 text-teal-800 text-xs px-2 py-1 rounded-full uppercase font-semibold tracking-wide">These are shortcuts</span>
             </div>
         </nav>
 
@@ -34,9 +35,8 @@
         </div>
     </div>
 
-    {{--
+    
     <!-- Scripts -->
-    <script src="{{ mix('js/app.js') }}"></script>
-    --}}
+    <script src="{{ mix('js/mousetrap.js') }}"></script>
 </body>
 </html>
