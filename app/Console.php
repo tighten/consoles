@@ -70,6 +70,24 @@ class Console extends Model
             'provider' => 'Microsoft',
             'route' => 'azure',
         ],
+        [
+            'name' => 'My Vultr',
+            'url' => 'https://my.vultr.com/',
+            'provider' => 'Vultr',
+            'route' => 'vultr',
+        ],
+        [
+            'name' => 'Linode Cloud',
+            'url' => 'https://cloud.linode.com/',
+            'provider' => 'Linode',
+            'route' => 'linode',
+        ],
+        [
+            'name' => 'Digital Ocean Cloud',
+            'url' => 'https://cloud.digitalocean.com/',
+            'provider' => 'Digital Ocean',
+            'route' => 'digital-ocean',
+        ],
     ];
 
     /**

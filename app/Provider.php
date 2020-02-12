@@ -28,6 +28,15 @@ class Provider extends Model
         [
             'name' => 'Twitter',
         ],
+        [
+            'name' => 'Vultr',
+        ],
+        [
+            'name' => 'Linode',
+        ],
+        [
+            'name' => 'Digital Ocean',
+        ]
     ];
 
     public function consoles()
