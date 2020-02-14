@@ -47,6 +47,12 @@ class Console extends Model
             'route' => 'google/firebase',
         ],
         [
+            'name' => 'Google Cloud Platform Console',
+            'url' => 'https://console.cloud.google.com',
+            'provider' => 'Google',
+            'route' => 'google/cloud',
+        ],
+        [
             'name' => 'Hetzner Cloud Console',
             'url' => 'https://console.hetzner.cloud',
             'provider' => 'Hetzner',
