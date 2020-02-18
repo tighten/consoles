@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<console-filter :consoles="{{ json_encode($consoles) }}"></console-filter>
 <div class="container max-w-4xl mx-auto">
     @foreach ($providers as $provider)
         <div class="font-semibold m-2 text-gray-700 text-lg uppercase">{{ $provider->name }}</div>
