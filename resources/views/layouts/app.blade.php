@@ -31,7 +31,6 @@
     <title>{{ config('app.name', 'Consoles.dev') }}</title>
 
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap&text=consoles.dev" rel="stylesheet">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none">
@@ -40,8 +39,8 @@
             <div class="container mx-auto px-6 md:px-0 text-center">
                 <div class="flex items-center justify-center">
                     <h1 class="mr-6">
-                        <a href="{{ url('/') }}" class="font-bold font-display lowercase no-underline text-5xl text-gray-800">
-                            {{ config('app.name', 'Consoles.dev') }}
+                        <a href="{{ url('/') }}">
+                            <img src="/images/logo.png" alt="Consoles.dev" title="Consoles.dev" style="width: 316px">
                         </a>
                     </h1>
                 </div>
@@ -54,11 +53,5 @@
             From the lovely folks at <a href="https://tighten.co/" class="underline hover:text-gray-800">Tighten</a>. Open source on <a href="https://github.com/tightenco/consoles" class="underline hover:text-gray-800">GitHub as tightenco/consoles</a>
         </div>
     </div>
-
-
-    <!-- Scripts -->
-    {{--
-        <script src="{{ mix('js/app.js') }}"></script>
-    --}}
 </body>
 </html>
