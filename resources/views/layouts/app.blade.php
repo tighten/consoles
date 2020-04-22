@@ -31,7 +31,7 @@
     <title>{{ config('app.name', 'Consoles.dev') }}</title>
 
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap&text=consoles.dev" rel="stylesheet">
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body class="bg-gray-100 h-screen antialiased leading-none">
