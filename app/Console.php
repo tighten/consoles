@@ -94,6 +94,18 @@ class Console extends Model
             'provider' => 'Digital Ocean',
             'route' => 'digital-ocean',
         ],
+        [
+            'name' => 'Apple Developer Program',
+            'url' => 'https://developer.apple.com/account',
+            'provider' => 'Apple',
+            'route' => 'apple/developer-program',
+        ],
+        [
+            'name' => 'App Store Connect',
+            'url' => 'https://appstoreconnect.apple.com',
+            'provider' => 'Apple',
+            'route' => 'apple/app-store-connect',
+        ],
     ];
 
     /**

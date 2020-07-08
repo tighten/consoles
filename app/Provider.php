@@ -36,6 +36,9 @@ class Provider extends Model
         ],
         [
             'name' => 'Digital Ocean',
+        ],
+        [
+            'name' => 'Apple'
         ]
     ];
 
