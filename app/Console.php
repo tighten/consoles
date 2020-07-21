@@ -95,7 +95,7 @@ class Console extends Model
             'route' => 'digital-ocean',
         ],
         [
-            'name' => 'Developer Program',
+            'name' => 'Apple Developer Program',
             'url' => 'https://developer.apple.com/account',
             'provider' => 'Apple',
             'route' => 'developer',
