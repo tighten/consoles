@@ -98,13 +98,13 @@ class Console extends Model
             'name' => 'Apple Developer Program',
             'url' => 'https://developer.apple.com/account',
             'provider' => 'Apple',
-            'route' => 'developer',
+            'route' => 'apple/developer',
         ],
         [
             'name' => 'App Store Connect',
             'url' => 'https://appstoreconnect.apple.com',
             'provider' => 'Apple',
-            'route' => 'connect',
+            'route' => 'apple/connect',
         ],
     ];
 
