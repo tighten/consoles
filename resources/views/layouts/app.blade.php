@@ -50,7 +50,7 @@
         @yield('content')
 
         <div class="container md:mt-6 mx-auto p-4 md:px-0 text-center text-gray-700">
-            From the lovely folks at <a href="https://tighten.co/" class="underline hover:text-gray-800">Tighten</a>. Open source on <a href="https://github.com/tightenco/consoles" class="underline hover:text-gray-800">GitHub as tightenco/consoles</a>
+            From the lovely folks at <a href="https://tighten.co/" class="underline hover:text-gray-800">Tighten</a>. Open source on <a href="https://github.com/tighten/consoles" class="underline hover:text-gray-800">GitHub as tighten/consoles</a>
         </div>
     </div>
 </body>
