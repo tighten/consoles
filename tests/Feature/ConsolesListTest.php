@@ -15,4 +15,19 @@ class ConsolesListTest extends TestCase
         $response->assertStatus(200);
         $response->assertSeeText(Console::first()->name);
     }
+
+    /** @test */
+    function it_shows_the_providers_in_alphabetical_order()
+    {
+        $response = $this->get('/');
+
+        $response->assertStatus(200);
+        $response->assertSeeInOrder([
+            'Amazon',
+            'GitHub',
+            'Google',
+            'Twitter',
+            'Vultr',
+        ]);
+    }
 }
