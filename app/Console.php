@@ -35,6 +35,12 @@ class Console extends Model
             'route' => 'google/analytics',
         ],
         [
+            'name' => 'Google Search Console',
+            'url' => 'https://search.google.com/search-console',
+            'provider' => 'Google',
+            'route' => 'google/search',
+        ],
+        [
             'name' => 'Google Play Console',
             'url' => 'https://play.google.com/apps/publish',
             'provider' => 'Google',
