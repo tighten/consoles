@@ -112,6 +112,12 @@ class Console extends Model
             'provider' => 'Apple',
             'route' => 'apple/connect',
         ],
+        [
+            'name' => 'Dropbox App Console',
+            'url' => 'https://www.dropbox.com/developers/apps/',
+            'provider' => 'Dropbox',
+            'route' => 'dropbox',
+        ],
     ];
 
     /**
