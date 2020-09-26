@@ -39,7 +39,10 @@ class Provider extends Model
         ],
         [
             'name' => 'Apple'
-        ]
+        ],
+        [
+            'name' => 'Dropbox'
+        ],
     ];
 
     public function consoles()
