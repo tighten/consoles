@@ -1,8 +1,10 @@
 name: Test Build
 
 on:
+  pull_request:
   push:
-
+    branches:
+      - main
 jobs:
   test:
     name: PHP 7.3, Laravel 6.*
@@ -37,7 +39,7 @@ jobs:
       - name: Install dependencies
         run: |
           composer require "orchestra/testbench:4.*" --no-interaction --no-update
-          composer update --prefer-dist --no-interaction --no-progress --no-suggest
+          composer install --prefer-dist --no-interaction --no-progress --no-suggest
           npm install
 
       - name: Build Assets
