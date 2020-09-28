@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b0999dba221a401a39439f878e0cb4b",
+    "content-hash": "916e3c6ca7adf37647c8d8623826b984",
     "packages": [
         {
             "name": "bugsnag/bugsnag",
@@ -2136,6 +2136,65 @@
                 "uuid"
             ],
             "time": "2019-12-17T08:18:51+00:00"
+        },
+        {
+            "name": "silber/page-cache",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JosephSilber/page-cache.git",
+                "reference": "cea67525d8407988d8fecfb0c87901546e39754c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JosephSilber/page-cache/zipball/cea67525d8407988d8fecfb0c87901546e39754c",
+                "reference": "cea67525d8407988d8fecfb0c87901546e39754c",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "5.0 - 5.8|^6.0|^7.0|^8.0",
+                "illuminate/filesystem": "5.0 - 5.8|^6.0|^7.0|^8.0",
+                "php": ">=5.5.9",
+                "symfony/http-foundation": "2.6 - 4|^5.0"
+            },
+            "require-dev": {
+                "illuminate/container": "5.0 - 5.8|^6.0|^7.0|^8.0",
+                "mockery/mockery": "^0.9.5",
+                "phpunit/phpunit": "^4.8",
+                "symfony/var-dumper": "^4.4|^5.0"
+            },
+            "suggest": {
+                "illuminate/console": "Allows clearing the cache via artisan"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Silber\\PageCache\\LaravelServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Silber\\PageCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joseph Silber",
+                    "email": "contact@josephsilber.com"
+                }
+            ],
+            "description": "Caches responses as static files on disk for lightning fast page loads.",
+            "keywords": [
+                "cache",
+                "laravel"
+            ],
+            "time": "2020-09-10T13:52:10+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
