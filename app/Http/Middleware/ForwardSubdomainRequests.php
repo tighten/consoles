@@ -15,7 +15,7 @@ class ForwardSubdomainRequests
      */
     public function handle($request, Closure $next)
     {
-        $domain = trim(str_replace(['https://', 'http://'], [], config('app.url')), "/");
+        $domain = trim(str_replace(['https://', 'http://'], [], config('app.url')), '/');
         $slug = str_replace($domain, '', $request->getHttpHost());
 
         if (! empty($slug)) {
@@ -26,7 +26,7 @@ class ForwardSubdomainRequests
             // forwarding to consoles.dev/aws/account)
             $slug = str_replace('.', '/', $slug);
 
-            return redirect(config('app.url') . '/' . $slug);
+            return redirect(config('app.url').'/'.$slug);
         }
 
         return $next($request);
