@@ -12,7 +12,7 @@
         "bugsnag/bugsnag-laravel": "^2.0",
         "calebporzio/sushi": "^1.0",
         "fideloper/proxy": "^4.0",
-        "laravel/framework": "^6.2",
+        "laravel/framework": "^6.20",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^1.1",
         "silber/page-cache": "^1.0"
