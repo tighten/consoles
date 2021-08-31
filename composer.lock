@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e3faf25ca44724b30b4af7b3a14ba212",
+    "content-hash": "8cda8b8860defb292aa3fe4bb4282d3d",
     "packages": [
         {
             "name": "bugsnag/bugsnag",
@@ -198,26 +198,27 @@
         },
         {
             "name": "calebporzio/sushi",
-            "version": "v1.1.2",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/calebporzio/sushi.git",
-                "reference": "a5620ae4eda911f6c589480f51340a41ac4a417f"
+                "reference": "9139590922edfa1db61e9aa49401889e85ed3b5f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/calebporzio/sushi/zipball/a5620ae4eda911f6c589480f51340a41ac4a417f",
-                "reference": "a5620ae4eda911f6c589480f51340a41ac4a417f",
+                "url": "https://api.github.com/repos/calebporzio/sushi/zipball/9139590922edfa1db61e9aa49401889e85ed3b5f",
+                "reference": "9139590922edfa1db61e9aa49401889e85ed3b5f",
                 "shasum": ""
             },
             "require": {
-                "illuminate/database": "^5.8 || ^6.0 || ^7.0",
-                "illuminate/support": "^5.8 || ^6.0 || ^7.0",
-                "php": "^7.1.3"
+                "illuminate/database": "^5.8 || ^6.0 || ^7.0 || ^8.0",
+                "illuminate/support": "^5.8 || ^6.0 || ^7.0 || ^8.0",
+                "php": "^7.1.3|^8.0"
             },
             "require-dev": {
-                "orchestra/database": "3.8.* || 3.9.* || ^4.0",
-                "orchestra/testbench": "3.8.* || 3.9.* || ^4.0",
+                "doctrine/dbal": "^2.9",
+                "orchestra/database": "3.8.* || 3.9.* || ^4.0 || ^5.0",
+                "orchestra/testbench": "3.8.* || 3.9.* || ^4.0 || ^6.0",
                 "phpunit/phpunit": "^7.5 || ^8.4 || ^9.0"
             },
             "type": "library",
@@ -238,10 +239,15 @@
             ],
             "description": "Eloquent's missing \"array\" driver.",
             "support": {
-                "issues": "https://github.com/calebporzio/sushi/issues",
-                "source": "https://github.com/calebporzio/sushi/tree/master"
+                "source": "https://github.com/calebporzio/sushi/tree/v2.3.1"
             },
-            "time": "2020-02-15T17:02:53+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/calebporzio",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-08-18T14:28:54+00:00"
         },
         {
             "name": "composer/ca-bundle",
@@ -7443,5 +7449,5 @@
         "php": "^7.4"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }

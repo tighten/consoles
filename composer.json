@@ -10,7 +10,7 @@
     "require": {
         "php": "^7.4",
         "bugsnag/bugsnag-laravel": "^2.22",
-        "calebporzio/sushi": "^1.0",
+        "calebporzio/sushi": "^2.3",
         "fideloper/proxy": "^4.4",
         "laravel/framework": "^6.20",
         "laravel/tinker": "^2.5",
