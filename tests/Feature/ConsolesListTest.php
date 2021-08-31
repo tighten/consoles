@@ -8,7 +8,7 @@ use Tests\TestCase;
 class ConsolesListTest extends TestCase
 {
     /** @test */
-    function it_shows_at_least_the_first_console()
+    public function it_shows_at_least_the_first_console()
     {
         $response = $this->get('/');
 
@@ -17,7 +17,7 @@ class ConsolesListTest extends TestCase
     }
 
     /** @test */
-    function it_shows_the_providers_in_alphabetical_order()
+    public function it_shows_the_providers_in_alphabetical_order()
     {
         $response = $this->get('/');
 

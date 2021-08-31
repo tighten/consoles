@@ -38,10 +38,10 @@ class Provider extends Model
             'name' => 'Digital Ocean',
         ],
         [
-            'name' => 'Apple'
+            'name' => 'Apple',
         ],
         [
-            'name' => 'Dropbox'
+            'name' => 'Dropbox',
         ],
     ];
 
