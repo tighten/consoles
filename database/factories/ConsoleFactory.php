@@ -2,8 +2,8 @@
 
 namespace Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use App\Console;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ConsoleFactory extends Factory
 {

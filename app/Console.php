@@ -9,7 +9,6 @@ use Sushi\Sushi;
 class Console extends Model
 {
     use HasFactory;
-
     use Sushi;
 
     protected $rows = [
