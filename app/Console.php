@@ -2,11 +2,13 @@
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Sushi\Sushi;
 
 class Console extends Model
 {
+    use HasFactory;
     use Sushi;
 
     protected $rows = [
@@ -63,7 +65,7 @@ class Console extends Model
             'url' => 'https://console.hetzner.cloud',
             'provider' => 'Hetzner',
             'route' => 'hcloud',
-         ],
+        ],
         [
             'name' => 'Twitter Apps',
             'url' => 'https://developer.twitter.com/en/apps',

@@ -1,11 +1,22 @@
 <?php
 
-use App\Console;
-use Faker\Generator as Faker;
+namespace Database\Factories;
 
-$factory->define(Console::class, function (Faker $faker) {
-    return [
-        'name' => $faker->name,
-        'url' => $faker->url,
-    ];
-});
+use App\Console;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class ConsoleFactory extends Factory
+{
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            'name' => $this->faker->name,
+            'url' => $this->faker->url,
+        ];
+    }
+}
