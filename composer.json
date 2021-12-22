@@ -11,7 +11,7 @@
         "php": "^7.4||^8.0",
         "bugsnag/bugsnag-laravel": "^2.22",
         "calebporzio/sushi": "^2.3",
-        "laravel/framework": "^8.75",
+        "laravel/framework": "^8.77",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.4",
         "silber/page-cache": "^1.0",
