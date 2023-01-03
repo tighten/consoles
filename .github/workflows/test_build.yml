@@ -38,8 +38,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer require "orchestra/testbench:4.*" --no-interaction --no-update
           composer install --prefer-dist --no-interaction --no-progress --no-suggest
+          composer require "orchestra/testbench:4.*" --no-interaction --no-update
           npm install
 
       - name: Build Assets
