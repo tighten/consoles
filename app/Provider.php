@@ -43,6 +43,9 @@ class Provider extends Model
         [
             'name' => 'Dropbox',
         ],
+        [
+            'name' => 'Trello',
+        ],
     ];
 
     public function consoles()
