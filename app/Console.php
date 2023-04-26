@@ -120,6 +120,12 @@ class Console extends Model
             'provider' => 'Dropbox',
             'route' => 'dropbox',
         ],
+        [
+            'name' => 'Trello Power-Ups',
+            'url' => 'https://trello.com/power-ups/admin/',
+            'provider' => 'Trello',
+            'route' => 'trello',
+        ],
     ];
 
     /**
