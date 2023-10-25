@@ -18,7 +18,6 @@
         "guzzlehttp/guzzle": "^7.2"
     },
     "require-dev": {
-        "laravel-frontend-presets/tailwindcss": "^4.3",
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^6.3",
         "phpunit/phpunit": "^9.5.10",
