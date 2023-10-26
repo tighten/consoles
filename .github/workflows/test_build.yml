@@ -38,7 +38,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer install --prefer-dist --no-interaction --no-progress --no-suggest
+          composer install --prefer-dist --no-interaction --no-progress
           composer require "orchestra/testbench:4.*" --no-interaction --no-update
           npm install
 
