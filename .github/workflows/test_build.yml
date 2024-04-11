@@ -7,7 +7,7 @@ on:
       - main
 jobs:
   test:
-    name: PHP 8.1, Laravel 9.x
+    name: PHP 8.2, Laravel 10.x
     runs-on: ubuntu-latest
 
     steps:
@@ -17,14 +17,14 @@ jobs:
       - name: Set up PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 8.1
+          php-version: 8.2
 
       - name: Cache Composer dependencies
         uses: actions/cache@v1
         with:
           path: ~/.composer/cache/files
-          key: php-8.1-laravel-9.*-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: php-8.1-laravel-9.*-composer-
+          key: php-8.2-laravel-10.*-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: php-8.2-laravel-10.*-composer-
 
       - name: Cache npm dependencies
         uses: actions/cache@v1
@@ -38,8 +38,8 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer install --prefer-dist --no-interaction --no-progress --no-suggest
-          composer require "orchestra/testbench:4.*" --no-interaction --no-update
+          composer install --prefer-dist --no-interaction --no-progress
+          composer require "orchestra/testbench:9.*" --no-interaction --no-update
           npm install
 
       - name: Build Assets
