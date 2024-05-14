@@ -8,7 +8,7 @@ use Tests\TestCase;
 class ConsoleRedirectTest extends TestCase
 {
     /** @test */
-    public function it_throws_404_if_console_not_found()
+    public function it_throws_404_if_console_not_found(): void
     {
         $response = $this->get('/not-found-console');
 
@@ -16,7 +16,7 @@ class ConsoleRedirectTest extends TestCase
     }
 
     /** @test */
-    public function it_redirects_to_console_url_if_it_exists()
+    public function it_redirects_to_console_url_if_it_exists(): void
     {
         $console = Console::where('route', 'github')->first();
 

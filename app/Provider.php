@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Sushi\Sushi;
 
 class Provider extends Model
@@ -48,7 +49,7 @@ class Provider extends Model
         ],
     ];
 
-    public function consoles()
+    public function consoles(): HasMany
     {
         return $this->hasMany(Console::class, 'provider', 'name');
     }
