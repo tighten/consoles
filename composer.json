@@ -9,11 +9,11 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "bugsnag/bugsnag-laravel": "^2.26",
-        "calebporzio/sushi": "^2.4",
+        "bugsnag/bugsnag-laravel": "^2.27",
+        "calebporzio/sushi": "^2.5",
         "laravel/framework": "^10.48",
         "laravel/tinker": "^2.8",
-        "laravel/ui": "^4.2",
+        "laravel/ui": "^4.5",
         "silber/page-cache": "^1.0",
         "guzzlehttp/guzzle": "^7.2"
     },
