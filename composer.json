@@ -9,20 +9,19 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "bugsnag/bugsnag-laravel": "^2.26",
         "calebporzio/sushi": "^2.4",
+        "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.48",
         "laravel/tinker": "^2.8",
         "laravel/ui": "^4.2",
         "silber/page-cache": "^1.0",
-        "guzzlehttp/guzzle": "^7.2"
+        "spatie/laravel-ignition": "^2.0"
     },
     "require-dev": {
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^6.3",
         "phpunit/phpunit": "^9.5.10",
-        "fakerphp/faker": "^1.9.1",
-        "spatie/laravel-ignition": "^2.0"
+        "fakerphp/faker": "^1.9.1"
     },
     "config": {
         "optimize-autoloader": true,

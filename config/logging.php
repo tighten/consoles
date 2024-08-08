@@ -51,7 +51,7 @@ return [
     'channels' => [
         'stack' => [
             'driver' => 'stack',
-            'channels' => ['daily', 'bugsnag'],
+            'channels' => ['daily', 'flare'],
             'ignore_exceptions' => false,
         ],
 
@@ -124,8 +124,9 @@ return [
             'path' => storage_path('logs/laravel.log'),
         ],
 
-        'bugsnag' => [
-            'driver' => 'bugsnag',
+        'flare' => [
+            'driver' => 'flare',
+            'level' => 'error',
         ],
     ],
 
