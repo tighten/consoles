@@ -159,7 +159,6 @@ return [
         /*
          * Package Service Providers...
          */
-        Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
         Silber\PageCache\LaravelServiceProvider::class,
         /*
          * Application Service Providers...
