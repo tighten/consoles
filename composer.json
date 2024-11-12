@@ -9,13 +9,13 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "calebporzio/sushi": "^2.4",
-        "guzzlehttp/guzzle": "^7.2",
+        "calebporzio/sushi": "^2.5",
+        "guzzlehttp/guzzle": "^7.9",
         "laravel/framework": "^10.48",
         "laravel/tinker": "^2.8",
-        "laravel/ui": "^4.2",
+        "laravel/ui": "^4.5",
         "silber/page-cache": "^1.0",
-        "spatie/laravel-ignition": "^2.0"
+        "spatie/laravel-ignition": "^2.8"
     },
     "require-dev": {
         "mockery/mockery": "^1.4.4",
