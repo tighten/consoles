@@ -9,12 +9,12 @@
     "license": "MIT",
     "require": {
         "php": "^8.2",
-        "calebporzio/sushi": "^2.4",
+        "calebporzio/sushi": "^2.5",
         "laravel/framework": "^11.42",
         "laravel/tinker": "^2.9",
-        "laravel/ui": "^4.4",
+        "laravel/ui": "^4.6",
         "silber/page-cache": "^1.1",
-        "spatie/laravel-ignition": "^2.4"
+        "spatie/laravel-ignition": "^2.9"
     },
     "require-dev": {
         "mockery/mockery": "^1.6",
