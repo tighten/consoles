@@ -10,7 +10,7 @@
     "require": {
         "php": "^8.2",
         "calebporzio/sushi": "^2.5.3",
-        "laravel/framework": "^v12.16",
+        "laravel/framework": "^12.25",
         "laravel/tinker": "^2.10.1",
         "laravel/ui": "^4.6.1",
         "silber/page-cache": "^1.1.1",
