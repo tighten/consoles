@@ -3,7 +3,6 @@
 use App\Models\Console;
 use Tests\TestCase;
 
-uses(Tests\TestCase::class);
 
 it('throws 404 if console not found', function () {
     $response = $this->get('/not-found-console');
