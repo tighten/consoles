@@ -1,27 +1,20 @@
 <?php
 
-namespace Tests\Feature;
-
 use App\Console;
 use Tests\TestCase;
 
-class ConsoleRedirectTest extends TestCase
-{
-    /** @test */
-    public function it_throws_404_if_console_not_found(): void
-    {
-        $response = $this->get('/not-found-console');
+uses(Tests\TestCase::class);
 
-        $response->assertStatus(404);
-    }
+it('throws 404 if console not found', function () {
+    $response = $this->get('/not-found-console');
 
-    /** @test */
-    public function it_redirects_to_console_url_if_it_exists(): void
-    {
-        $console = Console::where('route', 'github')->first();
+    $response->assertStatus(404);
+});
 
-        $this->get('/github')
-            ->assertStatus(302)
-            ->assertRedirect($console->url);
-    }
-}
+it('redirects to console url if it exists', function () {
+    $console = Console::where('route', 'github')->first();
+
+    $this->get('/github')
+        ->assertStatus(302)
+        ->assertRedirect($console->url);
+});
