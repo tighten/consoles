@@ -24,7 +24,7 @@ class ForwardSubdomainRequests
             // forwarding to consoles.dev/aws/account)
             $slug = str_replace('.', '/', $slug);
 
-            return redirect(config('app.url') . '/' . $slug);
+            return redirect(config('app.url').'/'.$slug);
         }
 
         return $next($request);
