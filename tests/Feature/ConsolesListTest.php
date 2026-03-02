@@ -1,8 +1,6 @@
 <?php
 
 use App\Console;
-use Tests\TestCase;
-
 
 it('shows at least the first console', function () {
     $response = $this->get('/');
