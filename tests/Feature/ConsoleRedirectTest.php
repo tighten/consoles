@@ -1,8 +1,6 @@
 <?php
 
 use App\Console;
-use Tests\TestCase;
-
 
 it('throws 404 if console not found', function () {
     $response = $this->get('/not-found-console');
