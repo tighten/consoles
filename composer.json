@@ -19,9 +19,10 @@
     },
     "require-dev": {
         "mockery/mockery": "^1.6.12",
-        "nunomaduro/collision": "^8.8",
-        "phpunit/phpunit": "^11.5.21",
-        "fakerphp/faker": "^1.24.1"
+        "nunomaduro/collision": "^7.0",
+        "fakerphp/faker": "^1.24.1",
+        "pestphp/pest": "^2.2",
+        "pestphp/pest-plugin-laravel": "^2.0"
     },
     "config": {
         "optimize-autoloader": true,
