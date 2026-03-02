@@ -58,4 +58,4 @@ jobs:
           php artisan migrate
 
       - name: Run PHP tests
-        run: vendor/bin/phpunit
+        run: vendor/bin/pest
