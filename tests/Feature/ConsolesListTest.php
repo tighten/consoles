@@ -1,33 +1,26 @@
 <?php
 
-namespace Tests\Feature;
-
 use App\Console;
 use Tests\TestCase;
 
-class ConsolesListTest extends TestCase
-{
-    /** @test */
-    public function it_shows_at_least_the_first_console(): void
-    {
-        $response = $this->get('/');
+uses(Tests\TestCase::class);
 
-        $response->assertStatus(200);
-        $response->assertSeeText(Console::first()->name);
-    }
+it('shows at least the first console', function () {
+    $response = $this->get('/');
 
-    /** @test */
-    public function it_shows_the_providers_in_alphabetical_order(): void
-    {
-        $response = $this->get('/');
+    $response->assertStatus(200);
+    $response->assertSeeText(Console::first()->name);
+});
 
-        $response->assertStatus(200);
-        $response->assertSeeInOrder([
-            'Amazon',
-            'GitHub',
-            'Google',
-            'Twitter',
-            'Vultr',
-        ]);
-    }
-}
+it('shows the providers in alphabetical order', function () {
+    $response = $this->get('/');
+
+    $response->assertStatus(200);
+    $response->assertSeeInOrder([
+        'Amazon',
+        'GitHub',
+        'Google',
+        'Twitter',
+        'Vultr',
+    ]);
+});
