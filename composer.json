@@ -19,15 +19,18 @@
     },
     "require-dev": {
         "mockery/mockery": "^1.6.12",
-        "nunomaduro/collision": "^7.0",
+        "nunomaduro/collision": "^8.8",
         "fakerphp/faker": "^1.24.1",
-        "pestphp/pest": "^2.2",
-        "pestphp/pest-plugin-laravel": "^2.0"
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
     },
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     },
     "extra": {
         "laravel": {
