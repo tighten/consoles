@@ -10,11 +10,12 @@
     "require": {
         "php": "^8.2",
         "calebporzio/sushi": "^2.5.3",
-        "laravel/framework": "^12.50",
+        "laravel/framework": "^12.53",
         "laravel/tinker": "^2.10.1",
         "laravel/ui": "^4.6.1",
         "silber/page-cache": "^1.1.1",
-        "spatie/laravel-ignition": "^2.10"
+        "spatie/laravel-ignition": "^2.11",
+        "tightenco/duster": "^3.3"
     },
     "require-dev": {
         "mockery/mockery": "^1.6.12",
