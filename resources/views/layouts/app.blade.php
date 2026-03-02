@@ -31,7 +31,7 @@
     <title>{{ config('app.name', 'Consoles.dev') }}</title>
 
     <!-- Styles -->
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    @vite('resources/css/app.css')
 
     @if (config('services.fathom.id'))
         <script src="https://cdn.usefathom.com/script.js" data-site="{{ config('services.fathom.id') }}" defer></script>
