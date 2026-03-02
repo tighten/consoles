@@ -20,7 +20,7 @@ jobs:
         with:
           php-version: 8.4
           extensions: posix, dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, intl, gd, exif, iconv, imagick
-          coverage: none
+                    coverage: none
 
       - name: Install dependencies
         run: composer install --no-interaction --no-suggest --ignore-platform-reqs
@@ -30,6 +30,12 @@ jobs:
 
       - name: Generate application key
         run: php artisan key:generate
+
+      - name: Install Node
+        run: npm ci
+
+      - name: Build frontend
+        run: npm run build
 
       - name: Run PHP tests
         run: php artisan test
