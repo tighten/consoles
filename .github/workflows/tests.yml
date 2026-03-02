@@ -31,5 +31,11 @@ jobs:
       - name: Generate application key
         run: php artisan key:generate
 
+      - name: Install Node
+        run: npm ci
+
+      - name: Build frontend
+        run: npm run build
+
       - name: Run PHP tests
         run: php artisan test
