@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Console;
+use App\Models\Console;
 use Tests\TestCase;
 
 class ConsolesListTest extends TestCase
