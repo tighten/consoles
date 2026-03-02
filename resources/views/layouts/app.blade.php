@@ -33,7 +33,7 @@
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
-    @if(config('services.fathom.id'))
+    @if (config('services.fathom.id'))
         <script src="https://cdn.usefathom.com/script.js" data-site="{{ config('services.fathom.id') }}" defer></script>
     @endif
 </head>
