@@ -3,7 +3,6 @@
 use App\Console;
 use Tests\TestCase;
 
-uses(Tests\TestCase::class);
 
 it('shows at least the first console', function () {
     $response = $this->get('/');
