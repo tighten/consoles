@@ -127,6 +127,12 @@ class Console extends Model
             'provider' => 'Trello',
             'route' => 'trello',
         ],
+        [
+            'name' => 'Slack Apps',
+            'url' => 'https://api.slack.com/apps',
+            'provider' => 'Slack',
+            'route' => 'slack',
+        ],
     ];
 
     /**

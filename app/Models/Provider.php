@@ -47,6 +47,9 @@ class Provider extends Model
         [
             'name' => 'Trello',
         ],
+        [
+            'name' => 'Slack',
+        ],
     ];
 
     public function consoles(): HasMany
