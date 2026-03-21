@@ -13,5 +13,6 @@
         "postcss": "^8.2.8",
         "resolve-url-loader": "^5.0.0",
         "tailwindcss": "^4.2.1"
-    }
+    },
+    "$schema": "https://www.schemastore.org/package.json"
 }
