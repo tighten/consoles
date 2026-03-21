@@ -18,6 +18,8 @@
     <env name="PULSE_ENABLED" value="false"/>
     <env name="QUEUE_CONNECTION" value="sync"/>
     <env name="SESSION_DRIVER" value="array"/>
+    <env name="BROADCAST_CONNECTION" value="null"/>
+    <env name="NIGHTWATCH_ENABLED" value="false"/>
   </php>
   <source>
     <include>
