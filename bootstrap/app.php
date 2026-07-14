@@ -1,13 +1,16 @@
 <?php
 
+use App\Http\Middleware\ForwardSubdomainRequests;
 use App\Providers\AppServiceProvider;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
+use Silber\PageCache\LaravelServiceProvider;
+use Silber\PageCache\Middleware\CacheResponse;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withProviders([
-        \Silber\PageCache\LaravelServiceProvider::class,
+        LaravelServiceProvider::class,
     ])
     ->withRouting(
         web: __DIR__ . '/../routes/web.php',
@@ -21,8 +24,8 @@ return Application::configure(basePath: dirname(__DIR__))
         $middleware->redirectUsersTo(AppServiceProvider::HOME);
 
         $middleware->append([
-            \App\Http\Middleware\ForwardSubdomainRequests::class,
-            \Silber\PageCache\Middleware\CacheResponse::class,
+            ForwardSubdomainRequests::class,
+            CacheResponse::class,
         ]);
 
         $middleware->throttleApi();
