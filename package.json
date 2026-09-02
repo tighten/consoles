@@ -15,5 +15,8 @@
         "tailwindcss": "^4.2.1",
         "concurrently": "^9.2.4"
     },
+    "optionalDependencies": {
+        "@laravel/multiplex": "^0.4.1"
+    },
     "$schema": "https://www.schemastore.org/package.json"
 }
